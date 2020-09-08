@@ -7,7 +7,7 @@ import unittest
 
 
 class LinkedList(ctypes.Structure):
-    cwd = 'D:/CLionProjects/CompilerLab1/lab1'
+    cwd = os.getcwd()
     lib_path = os.path.join(cwd, 'libll.so')
     lib = ctypes.CDLL(lib_path)
 
