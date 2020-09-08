@@ -66,7 +66,7 @@ void linked_list_insert(node *head, int val, int index){
     }
     new_node->next = temp->next;
     temp->next = new_node;
-    head->count++;
+    head->count=head->count+1;
 }
 
 void linked_list_delete(node *head, int index){
