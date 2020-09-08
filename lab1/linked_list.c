@@ -62,9 +62,9 @@ void linked_list_insert(node *head, int val, int index){
     new_node->value = val;
     new_node->next = NULL;
     for(int i = 0; i < index;i++){
-        temp = temp->next;
+        temp=temp->next;
     }
     new_node->next = temp->next;
     temp->next = new_node;
-    
+    head->count++;
 }
