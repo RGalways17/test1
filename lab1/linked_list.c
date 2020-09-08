@@ -53,7 +53,6 @@ void linked_list_append(node *head, int val){
     cur->next = new_node;
     head->count++;
 }
-
 /* your implementation goes here */
 
 void linked_list_insert(node *head, int val, int index){
@@ -68,7 +67,7 @@ void linked_list_insert(node *head, int val, int index){
     temp->next = new_node;
     head->count++;
 }
-
+/*
 void linked_list_delete(node *head, int index){
     node* temp = head;
     for(int i = 0;i < index-1;i++){
@@ -78,7 +77,7 @@ void linked_list_delete(node *head, int index){
     head->count--;
 }
 
-/* remove the first occurence node of val */
+/* remove the first occurence node of val *//*
 void linked_list_remove(node *head, int val){
     node *temp = head;
     int num = head->count;
@@ -91,7 +90,7 @@ void linked_list_remove(node *head, int val){
     }
 };
 
-/* remove all occurences of val */
+/* remove all occurences of val *//*
 void linked_list_remove_all(node *head, int val){
     node* temp = head;
     int num = head->count;
@@ -107,7 +106,7 @@ void linked_list_remove_all(node *head, int val){
     head->count-=remove_count;
 };
 
-/* get value at position index */
+/* get value at position index *//*
 int linked_list_get(node *head, int index){
     node *temp = head;
     for(int i = 0; i < index;i++){
@@ -116,7 +115,7 @@ int linked_list_get(node *head, int index){
     return temp->value;
 }
 
-/* search the first index of val */
+/* search the first index of val *//*
 int linked_list_search(node *head, int val){
     node *temp = head;
     int index = 0;
@@ -128,7 +127,7 @@ int linked_list_search(node *head, int val){
     return index;
 };
 
-/* search all indexes of val */
+/* search all indexes of val *//*
 node *linked_list_search_all(node *head, int val){
     node* all = linked_list_init();
     node* cur = all;
